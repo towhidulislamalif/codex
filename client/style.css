@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap');
+
+/* Reset default styles and set font family */
+* {
+  box-sizing: border-box;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background */
+body {
+  background-color: #343541;
+}
+
+/* Set app container properties */
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Set chat message properties */
+#chat-container {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+#chat-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Set wrapper properties */
+.wrapper {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Set AI container properties */
+.ai {
+  background-color: #40414f;
+}
+
+/* Set chat container properties */
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Set profile picture properties */
+.profile {
+  height: 36px;
+  width: 36px;
+  background-color: #5436da;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set AI profile picture properties */
+.ai .profile {
+  background-color: #10a37f;
+}
+
+/* Set profile image properties */
+.profile img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+}
+
+/* Set message properties */
+.message {
+  flex: 1;
+  color: #dcdcdc;
+  font-size: 20px;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: pre-wrap;
+}
+
+/* Hide scrollbar */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+/* Set form properties */
+form {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #40414f;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Set textarea properties */
+textarea {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Set button properties */
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Set image properties */
+form img {
+  width: 30px;
+  height: 30px;
+}
