@@ -71,7 +71,6 @@ async function handleSubmit(event) {
 
   // Add loading dots to the bot's chat stripe
   const messageDiv = document.getElementById(uniqueId);
-  console.log(messageDiv);
   loader(messageDiv);
 
   try {
@@ -92,7 +91,6 @@ async function handleSubmit(event) {
       // Parse the response
       const data = await response.json();
       const botMessage = data.bot.trim();
-      console.log(botMessage);
 
       // Render the bot's response
       typeText(messageDiv, botMessage);
